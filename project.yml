@@ -1,0 +1,28 @@
+name: aozora
+options:
+  bundleIdPrefix: com.gmail-yoshiki.tx
+  developmentLanguage: ja
+packages:
+  realm-cocoa:
+    url: https://github.com/realm/realm-cocoa
+    version: 10.20.0
+targets:
+  aozora:
+    type: application
+    platform: iOS
+    deploymentTarget: "14.5"
+    sources: [aozora]
+    dependencies:
+      - package: realm-cocoa
+  aozoraTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [aozoraTests]
+    dependencies:
+      - target: aozora
+  aozoraUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [aozoraUITests]
+    dependencies:
+      - target: aozora
