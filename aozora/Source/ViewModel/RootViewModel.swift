@@ -19,3 +19,10 @@ extension RootViewModel {
         return Section.allCases
     }
 }
+
+extension RootViewModel {
+    struct Fruit {
+        let name: String
+        let price: Int
+    }
+}
