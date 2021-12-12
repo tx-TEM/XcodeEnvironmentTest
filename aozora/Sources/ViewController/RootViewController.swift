@@ -34,7 +34,7 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         guard let vc = destinations[indexPath.row].vc else {
             return
         }
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
