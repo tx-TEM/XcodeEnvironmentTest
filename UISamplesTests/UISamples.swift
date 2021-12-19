@@ -1,14 +1,7 @@
-//
-//  aozoraTests.swift
-//  aozoraTests
-//
-//  Created by yoshiki-t on 2021/11/18.
-//
-
 import XCTest
-@testable import aozora
+@testable import UISamples
 
-class aozoraTests: XCTestCase {
+class UISamples: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

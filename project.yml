@@ -1,4 +1,4 @@
-name: Aozora
+name: UISamples
 options:
   bundleIdPrefix: com.gmail-yoshiki.tx
   developmentLanguage: ja
@@ -7,32 +7,32 @@ packages:
     url: https://github.com/realm/realm-cocoa.git
     version: 10.20.0
 targets:
-  Aozora:
+  UISamples:
     type: application
     platform: iOS
     deploymentTarget: "14.5"
-    sources: [Aozora]
+    sources: [UISamples]
     dependencies:
       - package: realm-cocoa
         product: Realm
       - package: realm-cocoa
         product: RealmSwift
-  AozoraTests:
+  UISamplesTests:
     type: bundle.unit-test
     platform: iOS
-    sources: [AozoraTests]
+    sources: [UISamplesTests]
     dependencies:
-      - target: Aozora
-  AozoraUITests:
+      - target: UISamples
+  UISamplesUITests:
     type: bundle.ui-testing
     platform: iOS
-    sources: [AozoraUITests]
+    sources: [UISamplesUITests]
     dependencies:
-      - target: Aozora
+      - target: UISamples
 schemes:
-  Aozora:
+  UISamples:
     build:
       targets:
-        Aozora: all
+        UISamples: all
     run:
       config: Debug

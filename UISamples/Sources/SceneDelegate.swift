@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  aozora
-//
-//  Created by yoshiki-t on 2021/11/18.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
