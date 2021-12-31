@@ -15,7 +15,7 @@ internal enum StoryboardScene {
   internal enum CompositionalLayoutCollection: StoryboardType {
     internal static let storyboardName = "CompositionalLayoutCollection"
 
-    internal static let initialScene = InitialSceneType<CompositionalLayoutCollectionViewController>(storyboard: CompositionalLayoutCollection.self)
+    internal static let initialScene = InitialSceneType<UISamples.CompositionalLayoutCollectionViewController>(storyboard: CompositionalLayoutCollection.self)
   }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"

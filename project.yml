@@ -12,6 +12,9 @@ targets:
     platform: iOS
     deploymentTarget: "14.5"
     sources: [UISamples]
+    preBuildScripts:
+      - script: xcrun --sdk macosx mint run swiftgen
+        name: Generate resources with SwiftGen
     dependencies:
       - package: realm-cocoa
         product: Realm
