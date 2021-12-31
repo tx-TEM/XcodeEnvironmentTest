@@ -3,13 +3,8 @@ import UIKit
 class RootViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
-    static var compositionalLayoutCollectionViewController: UIViewController? {
-        let storyboard = UIStoryboard(name: "CompositionalLayoutCollection", bundle: nil)
-        return storyboard.instantiateInitialViewController()
-    }
-
     let destinations: [Destination] = [
-        Destination(name: "\(CompositionalLayoutCollectionViewController.self)", vc: RootViewController.compositionalLayoutCollectionViewController)
+        Destination(name: "\(CompositionalLayoutCollectionViewController.self)", vc: StoryboardScene.CompositionalLayoutCollection.initialScene.instantiate())
     ]
 
     override func viewDidLoad() {
