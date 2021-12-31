@@ -44,9 +44,9 @@ ib:
     filter: .+\.storyboard$
     outputs:
         - templateName: scenes-swift5
-          output: UISamples/Sources/UI/StoryBoard/IB-Scenes+Generated.swift
+          output: UISamples/Sources/UI/StoryBoard/SwiftGen/IB-Scenes+Generated.swift
         - templateName: segues-swift5
-          output: UISamples/Sources/UI/StoryBoard/IB-Segues+Generated.swift
+          output: UISamples/Sources/UI/StoryBoard/SwiftGen/IB-Segues+Generated.swift
 
 
 ## There are other parsers available for you to use depending on your needs, for example:
