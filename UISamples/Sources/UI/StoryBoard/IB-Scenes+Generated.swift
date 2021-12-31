@@ -12,10 +12,10 @@ import UIKit
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardScene {
-  internal enum ExperimentUICollection: StoryboardType {
-    internal static let storyboardName = "ExperimentUICollection"
+  internal enum CompositionalLayoutCollection: StoryboardType {
+    internal static let storyboardName = "CompositionalLayoutCollection"
 
-    internal static let initialScene = InitialSceneType<ExperimentUICollectionViewController>(storyboard: ExperimentUICollection.self)
+    internal static let initialScene = InitialSceneType<CompositionalLayoutCollectionViewController>(storyboard: CompositionalLayoutCollection.self)
   }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"

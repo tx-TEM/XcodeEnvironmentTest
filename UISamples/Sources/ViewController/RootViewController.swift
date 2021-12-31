@@ -3,13 +3,13 @@ import UIKit
 class RootViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
-    static var experimentUICollectionViewController: UIViewController? {
-        let storyboard = UIStoryboard(name: "ExperimentUICollection", bundle: nil)
+    static var compositionalLayoutCollectionViewController: UIViewController? {
+        let storyboard = UIStoryboard(name: "CompositionalLayoutCollection", bundle: nil)
         return storyboard.instantiateInitialViewController()
     }
 
     let destinations: [Destination] = [
-        Destination(name: "\(ExperimentUICollectionViewController.self)", vc: RootViewController.experimentUICollectionViewController)
+        Destination(name: "\(CompositionalLayoutCollectionViewController.self)", vc: RootViewController.compositionalLayoutCollectionViewController)
     ]
 
     override func viewDidLoad() {

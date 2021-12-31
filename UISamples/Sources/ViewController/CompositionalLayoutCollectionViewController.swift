@@ -1,6 +1,6 @@
 import UIKit
 
-class ExperimentUICollectionViewController: UIViewController {
+class CompositionalLayoutCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
